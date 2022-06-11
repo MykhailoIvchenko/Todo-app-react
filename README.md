@@ -1,60 +1,28 @@
-# React - People table
-- Replace `<your_account>` with your Github username in the
-  [DEMO LINK](https://mykhailoivchenko.github.io/react_todo-app/)
-- Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+1. The project implements React application for tasks-management using Mate academy server api.
+After first loading you'll see an input which allows to create new todo after pressing Enter key.
+The application lets you to add todos (and saves them on server).
+You also can filter todos (select all, completed and active). The number of completed todos are shown
+by the application interface. There is a checkbox which allows to make all todos completed and vice versa.
+It looks "active" if all todos are completed.
+Clicking at each separate todo makes it completed or active.
+Any todo can be removed by clicking "x" which appears on hover.
+There is an ability to clear completed todos - clicking on button "Clear completed" removes all completed items from the list.
+The button is visible if there is at least 1 completed item in the list.
+Everything except the input to add new todo are hidden if there are no todos. But not if todos are just filtered out.
+There is an inline editing for the TODO item. Double click on the TODO title makes it editable.
+Enter saves changes
+Esc cancels editing
+Todo title can't be empty! If you click Enter with empty todo editing input, this todo will be removed.
+If you edit todo and move focus out of the current todo, changes would be saved.
 
-## If you don't use **Typescript**
-1. Rename `.tsx` files to `.jsx`
-1. use `eslint-config-react` in `.eslintrs.js` 
+2. Technologies stack: HTML5, CSS3, BEM, SASS (I was provided with ready markup and SCSS), JS, TS, React.
 
-## Advanced tasks
-Using code from previous task implement next tasks:
+3. Preview link: https:/mykhailoivchenko.github.io/Todo-app-react/
 
-1. Implement `PersonName` component rendering the name as a link to a person using its `slug` property
-    ```
-    /people/carolus-haverbeke-1832
-    ```
-    - It should be used for `name`, `mother` and `father` columns
-    - Use `CSS` `color: rgb(0, 71, 171)` for male name text and  and `color: rgb(255, 0, 0)` for female.
-    - If mother or father were not found in the array by their name show just a name (black, bold) instead of `PersonName` component
-1. Highlight the `PersonRow` mentioned in the URL with some background-color
-    - Highlight nobody if the `slug` in the URL is not found among the people
+4. The prototype of the application is here: http://todomvc.com/examples/vanillajs/
 
-### Filtering and sorting
-1. Add an `<input>` with `data-cy="filterInput"` attribut to filter people by `name`, `motherName` and `fatherName`
-    - it should update the URL with `?query=car` where `car` is a string entered by the user
-    - Read the `query` from the URL and set its value to the input when the page is loaded
-1. `PeoplePage` should read the `query` from the URL and filter people accordingly
-    - check if the `query` matches the `name`, `motherName` or `fatherName`
-1. Implement the sorting by `name`, `sex`, `born` and `died` by clicking on the cell containing column title
-    - Highlight the column with the *
-    - Add `?sortBy=born` param to the URL
-    - Sort the people by selected column
-    - If the page is loaded with `sortBy` it should be applied (column is highilghted and people are sorted)
-    - If the `sortBy` value is not valid don't highlight any column and don't sort people
-
-## Advanced sorting and filtering
-1. Sort should work together with filtering
-1. The `query` and `sortBy` should stay in the URL when you select a user (keep `location.search` on navigation)
-1. Implement the ability to sort people in both directions `?sortOrder=asc` or `desc`
-    - add [Sort both icon](public/images/sort_both.png) to show that column allows sorting
-    - The first click sorts `ascending` (A-Z) the second sorts `descending` (Z-A)
-    - add `sort_ask` or `sort_desc` icons accordingly to the applied sorting
-1. Update the `query` in the URL with `debounce` of 500ms
-
-## (* OPTIONAL) Adding a person
-1. (* OPTIONAL) Create a `NewPerson` component with a form to add new people and show it above the table
-    - all the fields should be required for now
-    - `sex` should be chosen among 2 options (radio buttons)
-    - `mother` and `father` are selects with all the `women` and `men` from the table accordingly
-1. (* OPTIONAL) Create an `Add person` button navigating to `/people/new`
-    - the `NewPerson` should appear instead of a button
-    - When the person is added you should navigate back to the `/people` page
-1. (* OPTIONAL) Add data validations:
-    - `name` should contain only letters and spaces
-    - `born` and `died` are valid years between `1400` and the current year
-    - `died` should be disabled if `born` is empty
-    - `died - born` should be >= 0 and < 150
-    - make `mother` and `father` field optional
-    - update the list of `mothers` and `fathers` according to the entered `born` year (they must be alive)
-    (selects should be empty and disabled before the born year was entered)
+5. Using this app you will operate with my todos. User is fetched from server in the application.
+It is possible to make another application (or upgrade this one) for user adding to server.
+Also it can be added a field, which allows to select user and operate with his/her todos.
+But there is no such aim of this application, so be comfortable to explote my todos)))
+To add todo just write it into the field at the top of application.
