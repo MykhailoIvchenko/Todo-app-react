@@ -26,5 +26,6 @@ It is possible to make another application (or upgrade this one) for user adding
 Also it can be added a field, which allows to select user and operate with his/her todos.
 But there is no such aim of this application, so be comfortable to explote my todos)))
 To add todo just write it into the field at the top of application.
+
 IMPORTANT! If there are some problem with server you may use the app with local storage.
 The link is here: https:/mykhailoivchenko.github.io/todo-app-react-local-storage/
