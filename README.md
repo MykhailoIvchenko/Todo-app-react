@@ -4,7 +4,7 @@ The application lets you to add todos (and saves them on server).
 You also can filter todos (select all, completed and active). The number of completed todos are shown
 by the application interface. There is a checkbox which allows to make all todos completed and vice versa.
 It looks "active" if all todos are completed.
-Clicking at each separate todo makes it completed or active.
+Clicking at each separate todo circle (input) makes it completed or active.
 Any todo can be removed by clicking "x" which appears on hover.
 There is an ability to clear completed todos - clicking on button "Clear completed" removes all completed items from the list.
 The button is visible if there is at least 1 completed item in the list.
