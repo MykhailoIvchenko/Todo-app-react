@@ -15,7 +15,7 @@ Esc cancels editing
 Todo title can't be empty! If you click Enter with empty todo editing input, this todo will be removed.
 If you edit todo and move focus out of the current todo, changes would be saved.
 
-2. Technologies stack: HTML5, CSS3, BEM, SASS (I was provided with ready markup and SCSS), JS, TS, React.
+2. Technologies stack: HTML5, CSS3, SASS (I was provided with ready markup and SCSS), JS, TS, React.
 
 3. Preview link: https:/mykhailoivchenko.github.io/todo-app-react/
 
